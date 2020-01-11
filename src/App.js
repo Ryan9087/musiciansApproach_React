@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from './shared/Navigation';
+import Home from './components/Home';
+import Header from './shared/Header';
+import Footer from './shared/Footer';
+import Advancedlessons from './components/AdvancedLessons';
+import Beginnerlessons from './components/BeginnerLessons';
+import BeginnerClassicallessons from './components/ClassicalLessons';
+import Contact from './components/Contact';
+import IntermediateLessons from './components/IntermediateLessons';
+import Jazzlessons from './components/JazzLessons';
+import Login from './components/Login';
+import MusicTheoryLessons from './components/MusicTheoryLessons';
+import RockLessons from './components/RockLessons';
 
-function App() {
+
+
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="App">
+       <Header />
+       <Nav />
+       <Home />
+       <Footer />
+     </div>
   );
 }
 
