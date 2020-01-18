@@ -1,10 +1,16 @@
 import React from 'react';
 import "../App.css";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from '../shared/Navigation';
+import Contact from './Contact';
+import Intermediatelessons from './Intermediatelessons';
+import MusicTheoryLessons from './MusicTheoryLessons';
 
-const Beginnerlessons = (props) => {
+
+function Beginnerlessons() {
   return (
      <div>
-       <h1>Contact</h1>
+       <h1>Beginner Lessons</h1>
      </div>
   );
 }

@@ -1,30 +1,66 @@
 import React from 'react';
 import "./App.css";
-import Nav from './shared/Navigation';
-import Home from './components/Home';
-import Header from './shared/Header';
-import Footer from './shared/Footer';
-import Advancedlessons from './components/AdvancedLessons';
-import Beginnerlessons from './components/BeginnerLessons';
-import BeginnerClassicallessons from './components/ClassicalLessons';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import Navigation from './shared/Navigation';
+import Frontpagecard from './components/Frontpagecard';
+import Advancedlessons from './components/Advancedlessons';
+import Beginnerlessons from './components/Beginnerlessons';
 import Contact from './components/Contact';
-import IntermediateLessons from './components/IntermediateLessons';
-import Jazzlessons from './components/JazzLessons';
-import Login from './components/Login';
-import MusicTheoryLessons from './components/MusicTheoryLessons';
-import RockLessons from './components/RockLessons';
+import Footer from './components/Footer';
+import Intermediatelessons from './components/Intermediatelessons';
+import Carouselslider from './components/Carouselslider';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+  Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label, Container, Row, Col } from 'reactstrap';
+import Loginmodal from './components/Loginmodal';
 
 
-
-const App = (props) => {
+function App() {
   return (
+    <Router>
      <div className="App">
-       <Header />
-       <Nav />
-       <Home />
-       <Footer />
+       {/* <Header /> */}
+       <Switch>
+       <Route path="/" exact component={Home} />
+       <Route path="/beginnerlessons" component={Beginnerlessons} />
+       <Route path="/intermediatelessons" component={Intermediatelessons} />
+       <Route path="/advancedlessons" component={Advancedlessons} />
+       <Route path="/contact" component={Contact} />
+       </Switch>
+       {/* <Footer /> */}
      </div>
+     </Router>
   );
 }
+
+
+
+
+const Home = () => (
+  <div>
+    <Container>
+          <Row xs="1">
+           <Col><Carouselslider /></Col> 
+          </Row>
+          
+          <Row xs="1">
+            <Col><img className="homeImage" src='/assets/images/barStar.png'></img></Col>
+          </Row>
+          <Navigation /> 
+          <Jumbotron fluid>
+                          <div className="container">
+                              <div className="row">
+                                  <div className="col">
+                                  <h1 class="display-5 scriptMaster">Musician's Approach</h1>
+            <p class="lead">As a guitarist, your approach is everything!</p>
+            <p class="openingText">Interested in learning to play guitar? If you’re reading this, you’ve already taken the primary step in starting your musical journey. Learning guitar can be intimidating and it’s normal as a beginner to have many questions and concerns, but we’re here to help you get started off on the right foot.</p>
+                                  </div>
+                              </div>
+                          </div>
+          </Jumbotron>    
+          <Frontpagecard />      
+    </Container>              
+    <Footer />
+  </div>
+)
 
 export default App;

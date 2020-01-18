@@ -1,10 +1,10 @@
 import React from 'react';
 import "../App.css";
 
-const Advancedlessons = (props) => {
+function Advancedlessons() {
   return (
      <div>
-       <h1>Contact</h1>
+       <h1>Advanced Lessons</h1>
      </div>
   );
 }

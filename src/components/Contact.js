@@ -1,7 +1,7 @@
 import React from 'react';
 import "../App.css";
 
-const Contact = (props) => {
+function Contact() {
   return (
      <div>
        <h1>Contact</h1>

@@ -1,20 +1,261 @@
+ /* Coolors Exported Palette - coolors.co/3c493f-7e8d85-b3bfb8-f0f7f4-a2e3c4 
+ #3c493f
+ #7e8d85
+ #b3bfb8
+ #f0f7f4
+ #a2e3c4
+ */
+
+/* HSL */
+$darkGreen: hsla(134%, 10%, 26%, 1);
+$forestGreen: hsla(148%, 6%, 52%, 1);
+$lightGreen: hsla(145%, 9%, 73%, 1);
+$greyGreen: hsla(154%, 30%, 95%, 1);
+$aguaGreen: hsla(151%, 54%, 76%, 1);
+
+/* RGB */
+$darkGreen: rgba(60, 73, 63, 1);
+$forestGreen: rgba(126, 141, 133, 1);
+$lightGreen: rgba(179, 191, 184, 1);
+$greyGreen: rgba(240, 247, 244, 1);
+$aguaGreen: rgba(162, 227, 196, 1);
+
+* {
+  font-family: "Raleway", sans-serif;
+  color: #7e8d85;
+}
+
+a, nav li {
+  cursor: pointer;  
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  background: rgb(73, 79, 82);
+div.navContainer {
+  margin: 0;
+}
+
+.row.flexBasisOver .col {
+  flex-basis: auto !important;
+}
+
+div.navContainer a, div.navContainer div {
+  float: left;
+  padding: 0 20px 0 0;
+  margin: -20px 0 0 -12px;
+}
+
+button.loginButton {
+  color: white;
+  background-color: #3c493f;
+  border: 1px solid white;
+  margin: -20px 0 33px 0px;
+  text-align: end;
+}
+
+div.navButtons a, div.navButtons div.dropdown {
+  padding: 0 10px;
+  float: left;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.homeImage {
+  width: 100%;
+}
+
+.footerCols {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+
+.navbar-text a, .nav-item a {
+  cursor: pointer;
+}
+
+body {
+  background-color: #f0f7f4;
+}
+
+.carouselPosition {
+  bottom: -8px !important;
+  padding-bottom: 0px !important;
+}
+
+.slideTitle {
+  margin: 0 0 -4px 0;
+}
+
+.carouselPosition p {
+  margin: 4px 0 14px 0;
+}
+
+.scriptMaster {
+  font-family: 'Hydrant', cursive;
+  letter-spacing: 2px;
+  font-size: 44pt;
+  color: #3c493f; 
+  padding: 0;
+  margin: 0;
+}
+
+.jumboExtras {
+  background-color: white;
+  border-top: 2px solid #b3bfb8;
+  padding: 0px 25px;
+
+}
+
+.containerExtras {
+  background-color: white;
+  padding: 0px;
+  border: 1px solid white;
+  box-shadow: 5x 5px 5px rgba(240, 247, 244, 1);
+}
+
+#subText {
+  font-size: 20pt;
+}
+
+button,
+.btn {
+  background: #3c493f;
+  border: none;
+}
+
+.card-body .btn {
+  background:  #7e8d85;
+  border: none;
+}
+
+button:hover,
+.btn:hover {
+  background: #b3bfb8 !important;
+}
+
+button:active,
+.btn:active {
+  background:  #7e8d85 !important;
+}
+
+.modal-header h3 {
+  color: #3c493f;
+}
+
+.site-footer {
+  padding: 0px 5px 15px 5px;
+  border: none;
+}
+
+.btn-instagram i, .modalMaster h3, .carousel-caption p, .carousel-caption h3, label.btn {
   color: white;
 }
 
-.nav-links {
-  width: 75%;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  justify-content: space-around;
+label.btn.active {
+  background: #7e8d85;
+}
+
+.footerContact, .footerContactInfo {
+  margin: 10px 0px 30px;
+}
+
+.list-unstyled a {
+  font-size: 10pt;
+  color: #3c493f;
+  display: inline-flex;
+}
+
+.list-unstyled li {
+ display: inline;
+ padding: 5px;
+}
+
+.list-unstyled a:hover {
+  color: #b3bfb8;
+}
+
+.modalMaster {
+   background: #3c493f;
+}
+
+.card a {
+  align-items: baseline;
+}
+
+#audioPlayer {
+  width: 100%;
+  background-color: rgba(60, 73, 63, 1)!important;
+}
+
+.creditText {
+  font-size: 8pt;
+  padding: 0;
+  margin: -3px 0 5px;
+}
+
+.span4 img {
+  margin-right: 10px;
+}
+
+.span4 .img-left {
+  float: left;
+}
+
+.span4 .img-right {
+  float: right;
+}
+
+.progress-bar  {
+  background-color: #7e8d85;
+}
+
+.dropdown-menu a {
+  font-size: 10pt;
+  color: #3c493f;
+  padding-left: 12px;
+}
+
+p.openingText {
+  font-size: 13pt;
+}
+
+.cardImage {
+  width: 120px;
+  height: auto;
+  margin: 10px auto 15px auto;
+  display: block;
+}
+
+.barStarHome {
+  width: 100%;
+  margin: 0 0 0px 0;
+  position: absolute;
+  top: -5;
+  left: 0;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  background: white;
+}
+
+div.jumbotron.jumbotron-fluid, .jumbotron {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+  .list-unstyled li {
+    display: block;
+    padding: 0;
+   }
 }
