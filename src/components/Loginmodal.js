@@ -1,36 +1,74 @@
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React, { Component } from 'react';
+import {
+  Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+  Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label
+} from 'reactstrap';
 import "../App.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Nav from '../shared/Navigation';
+import Navigation from '../shared/Navigation';
 import Intermediatelessons from './Intermediatelessons';
 import MusicTheoryLessons from './MusicTheoryLessons';
 
-const Loginmodal = (props) => {
-  const {
-    buttonLabel,
-    className
-  } = props;
+class Loginmodal extends Component {
+  constructor(props) {
+    super(props);
 
-  const [modal, setModal] = useState(false);
+    this.state = {
+      isNavOpen: false,
+      isModalOpen: false
+    };
+    this.toggleModal = this.toggleModal.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+  }
 
-  const toggle = () => setModal(!modal);
+  toggleModal() {
+    this.setState({
+      isModalOpen: !this.state.isModalOpen
+    });
+  }
 
-  return (
-    <div>
-      <Button className="loginButton" onClick={toggle}>{buttonLabel}Log In</Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
-        </ModalFooter>
-      </Modal>
-    </div>
-  );
+  handleLogin(event) {
+    alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
+    this.toggleModal();
+    event.preventDefault();
+  }
+
+
+  render() {
+    return (
+      <React.Fragment>
+        <Button outline onClick={this.toggleModal}>
+          <i className="fa fa-sign-in fa-lg" /> Login
+        </Button>
+
+        <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+          <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+          <ModalBody>
+            <Form onSubmit={this.handleLogin}>
+              <FormGroup>
+                <Label htmlFor="username">Username</Label>
+                <Input type="text" id="username" name="username"
+                  innerRef={input => this.username = input} />
+              </FormGroup>
+              <FormGroup>
+                <Label htmlFor="password">Password</Label>
+                <Input type="password" id="password" name="password"
+                  innerRef={input => this.password = input} />
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="checkbox" name="remember"
+                    innerRef={input => this.remember = input} />
+                  Remember me
+                                </Label>
+              </FormGroup>
+              <Button type="submit" value="submit" color="primary">Login</Button>
+            </Form>
+          </ModalBody>
+        </Modal>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Loginmodal;

@@ -5,7 +5,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 
 function Footer() {
   return (
-     <div>
+     <div>  
        <footer class="site-footer">
         <Container>
           <Row xs="3">
@@ -19,14 +19,10 @@ function Footer() {
             </Col>
             <Col className="footerCols">
               <h5>Social</h5>
-              <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/">
-                <i class="fa fa-instagram"></i>
-              </a>
-              <a classNames="btn btn-social-icon btn-instagram" href="http://facebook.com/">
-                <i className="fa fa-facebook"></i>
-              </a>
-              <a className="btn btn-social-icon btn-instagram" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-              <a className="btn btn-social-icon btn-instagram" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
+                <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/"><i className="fa fa-facebook" /></a>{' '}
+                <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
+                <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube" /></a> 
             </Col>
             <Col className="footerCols">
               <div className="footerContact">
@@ -35,7 +31,7 @@ function Footer() {
                   <span className="footerContactInfo">1-214-555-1234</span>
                 </a>
                 <br />
-                <a href="mailto:campsites@nucamp.co">
+                <a href="mailto:info@musiciansapproach.com">
                   <i className="fa fa-envelope-o"></i>
                   <span className="footerContactInfo">info@musiciansapproach.com</span>
                 </a>

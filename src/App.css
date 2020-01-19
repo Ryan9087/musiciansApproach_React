@@ -25,13 +25,17 @@ $aguaGreen: rgba(162, 227, 196, 1);
   color: #7e8d85;
 }
 
+p {
+  color: #7e8d85;
+}
+
 a, nav li {
   cursor: pointer;  
 }
 
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 div.navContainer {
   margin: 0;
@@ -52,7 +56,10 @@ button.loginButton {
   background-color: #3c493f;
   border: 1px solid white;
   margin: -20px 0 33px 0px;
-  text-align: end;
+}
+
+div.col-sm-12.col-md-3 div.loginButton {
+  text-align: right;
 }
 
 div.navButtons a, div.navButtons div.dropdown {
@@ -128,11 +135,6 @@ button,
   border: none;
 }
 
-.card-body .btn {
-  background:  #7e8d85;
-  border: none;
-}
-
 button:hover,
 .btn:hover {
   background: #b3bfb8 !important;
@@ -183,13 +185,52 @@ label.btn.active {
    background: #3c493f;
 }
 
+/* CARD */
 .card a {
   align-items: baseline;
 }
 
+.card {
+  margin: 10px 15px;
+  border: none;
+  border-top-left-radius: 15px;;
+  border-top-right-radius: 15px;
+}
+
+.card-body .btn {
+  background:  #7e8d85;
+  border: none;
+  width: 100%;
+}
+
+div.card-body {
+  border: 2px solid   #f0f7f4;
+  /* border-bottom-left-radius: 15px;;
+  border-bottom-right-radius: 15px;; */
+}
+
+.cardImage {
+  width: 120px;
+  height: auto;
+  margin: 10px auto 15px auto;
+  display: block;
+}
+
+.img.card-image-top {
+  border-top-left-radius: 15px;;
+  border-top-right-radius: 15px;
+}
+
+div.card-title {
+  font-size: 18pt;
+  font-family: "Open Sans", sans-serif;
+  color:  #3c493f;
+}
+/* END CARD */
+
+
 #audioPlayer {
   width: 100%;
-  background-color: rgba(60, 73, 63, 1)!important;
 }
 
 .creditText {
@@ -224,13 +265,6 @@ p.openingText {
   font-size: 13pt;
 }
 
-.cardImage {
-  width: 120px;
-  height: auto;
-  margin: 10px auto 15px auto;
-  display: block;
-}
-
 .barStarHome {
   width: 100%;
   margin: 0 0 0px 0;
@@ -245,13 +279,34 @@ p.openingText {
 
 div.jumbotron.jumbotron-fluid, .jumbotron {
   padding: 0;
-  margin: 0;
+  margin: 25px 0;
   background-color: white;
 }
 
+h6 a.dropdownLink {
+  margin: 0 0 10px -10px;
+  padding: 0;
+  color:  #7e8d85;
+  font-size: 12pt;
+}
 
+.dropdown-menu.show {
+  margin: 0px;
+}
 
+div.homeCardButton {
+  width: 100%;
+  margin-top: auto;
+}
 
+.btn.btn-primary.my-3 {
+  width: 200px !important;
+}
+
+.btn-outline-secondary {
+  color: white;
+  margin: -30px 0 0 0;
+}
 
 @media only screen and (max-width: 960px) {
   .list-unstyled li {
@@ -259,3 +314,4 @@ div.jumbotron.jumbotron-fluid, .jumbotron {
     padding: 0;
    }
 }
+

@@ -18,7 +18,6 @@ function App() {
   return (
     <Router>
      <div className="App">
-       {/* <Header /> */}
        <Switch>
        <Route path="/" exact component={Home} />
        <Route path="/beginnerlessons" component={Beginnerlessons} />
@@ -26,7 +25,6 @@ function App() {
        <Route path="/advancedlessons" component={Advancedlessons} />
        <Route path="/contact" component={Contact} />
        </Switch>
-       {/* <Footer /> */}
      </div>
      </Router>
   );
