@@ -32,7 +32,7 @@ class Loginmodal extends Component {
   handleLogin(event) {
     let user = LoginService.login(this.username.value, this.password.value);
     if (user) {
-      alert(`Username: ${user.username} Password: ${user.password} Remember: ${this.remember.checked}`);
+      // alert(`Username: ${user.username} Password: ${user.password} Remember: ${this.remember.checked}`);
       console.log(this.props)
       this.props.loginFunc(user);
 

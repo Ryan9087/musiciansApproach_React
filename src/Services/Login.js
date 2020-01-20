@@ -11,6 +11,7 @@ const siteUsers = [
     {
         username: 'Jon',
         password: '2345',
+        message:  'logged in',
         userlevel: "intermediate",
         badge: "assets/images/intermediateBadge.png" 
     }

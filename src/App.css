@@ -44,7 +44,7 @@ div.navContainer {
 div.navContainer a, div.navContainer div {
   float: left;
   padding: 0 20px 0 0;
-  margin: -20px 0 0 -12px;
+  margin: -30px 0 0 -12px;
 }
 
 button.loginButton {
@@ -54,10 +54,14 @@ button.loginButton {
   margin: -20px 0 33px 0px;
 }
 
+p.lead {
+  font-size: 18pt;
+}
+
 button.loginMaster.btn.btn-outline-secondary {
   float: right;
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 0px;
 }
 
@@ -337,7 +341,7 @@ div.homeCardButton {
 }
 
 .row img.img-left {
-  width: 180px;
+  width: 190px;
   height: auto;
 } 
 
@@ -371,6 +375,10 @@ button.rcw-launcher.rcw-hide-sm, .rcw-launcher {
 
 button.linkButton.btn.btn-secondary {
   width: 200px;
+}
+
+p.openingText {
+  margin-bottom: 0;
 }
 
 
