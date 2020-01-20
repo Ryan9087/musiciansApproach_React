@@ -1,11 +1,18 @@
+import Beginnerlessons from "../components/Beginnerlessons";
+
 const siteUsers = [
-    {
-        username: 'Ryan',
-        password: '1234'
+  {
+        username: 'Ryan', 
+        password: '1234',
+        message:  'logged in',
+        userlevel: "beginner",
+        badge: "assets/images/beginnerBadge.png"   
     },
     {
         username: 'Jon',
-        password: '2345'
+        password: '2345',
+        userlevel: "intermediate",
+        badge: "assets/images/intermediateBadge.png" 
     }
 ];
 

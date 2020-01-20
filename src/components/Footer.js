@@ -6,7 +6,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 function Footer() {
   return (
      <div>  
-       <footer class="site-footer">
+       <footer className="site-footer">
         <Container>
           <Row xs="3">
             <Col className="footerCols">

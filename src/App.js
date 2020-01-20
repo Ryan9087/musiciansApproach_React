@@ -55,7 +55,7 @@ const Home = () => (
                           </div>
           </Jumbotron>    
           <Frontpagecard />      
-    </Container>              
+    </Container>          
     <Footer />
   </div>
 )

@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App.css";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Navigation from '../shared/Navigation';
 import Contact from './Contact';
 import Intermediatelessons from './Intermediatelessons';
@@ -29,12 +29,12 @@ class Beginnerlessons extends Component {
     // Now send the message throught the backend API
     const conversations = [
         {
-            que: 'How much?',
-            res: '100$/hour'
+            que: 'How much to join this site?',
+            res: '$20 a month'
         },
         {
             que: 'What is your name?',
-            res: 'Javis'
+            res: "Chat Master for Musician's Approach"
         },
     ]
     conversations.find((con) => {
@@ -48,6 +48,9 @@ class Beginnerlessons extends Component {
     return (
         <div>
         <Container>
+        <div>  
+         <p className="scriptMasterSub">Musician's Approach</p> 
+         </div>
               <Row xs="1">
                 <Col><img className="homeImage" src='/assets/images/barStar.png'></img></Col>
               </Row>
@@ -56,7 +59,7 @@ class Beginnerlessons extends Component {
                               <div className="container">
                               </div>
                               <div className="row">
-                        <img className="img-left pl-5" src="assets/images/beginnerBadge.png" />
+                        <img className="img-left pl-5 pt-5" src="assets/images/beginnerBadge.png" />
                         <div className="content-heading pl-3 pt-5">
                             <h2>Beginner Lessons</h2>
                             <p>The master has failed more times than the beginner has even tried.</p>
@@ -68,10 +71,10 @@ class Beginnerlessons extends Component {
                             <Progress value="1" max="20" />
                         </div>
                         <div className="row d-flex justify-content-around rowEtras">
-                    <div class="col">
+                    <div className="col">
                         <div className="card p-4 border-0">
                             <h4 className="card-title pb-1">The major scale (Ionian)</h4>
-                            <img src="assets/images/scalesIonian.jpg" class="card-img-top img-fluid mb-3" alt="..." />
+                            <img src="assets/images/scalesIonian.jpg" className="card-img-top img-fluid mb-3" alt="..." />
     
                             <div className="card-body">
                                 <p className="card-text">
@@ -96,7 +99,9 @@ class Beginnerlessons extends Component {
                                         Now that you have taken our beginner lessons, move on to our intermediate lessons to learn more..
                                     </p>
                                 <Col >    
-                                <a href="intermediate.html" class="btn btn-primary my-3">Intermediate Lessons</a>
+                                <Link to="/Intermediatelessons">
+                                <Button className="linkButton">Intermediate Lessons</Button>
+                                </Link>
                                 </Col>
                             </div>
                         </div>

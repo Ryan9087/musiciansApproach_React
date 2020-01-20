@@ -10,18 +10,18 @@ import {
 const items = [
   {
     src: '/assets/images/classical_guitar.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'Classical Guitar Lessons',
+    caption: 'Classical Guitar Lessons'
   },
   {
     src: '/assets/images/rock_guitar.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'Rock Guitar Lessons',
+    caption: 'Rock Guitar Lessons'
   },
   {
     src: 'assets/images/jazz_guitar.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'Jazz Guitar Lessons',
+    caption: 'Jazz Guitar Lessons'
   }
 ];
 
