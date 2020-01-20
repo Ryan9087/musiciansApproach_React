@@ -20,6 +20,12 @@ $lightGreen: rgba(179, 191, 184, 1);
 $greyGreen: rgba(240, 247, 244, 1);
 $aguaGreen: rgba(162, 227, 196, 1);
 
+@font-face {
+   font-family: 'Hydrant';
+   src: local('Hydrant'), url('./font/Hydrant.otf') format('otf');
+}
+
+
 * {
   font-family: "Raleway", sans-serif;
   color: #7e8d85;
@@ -33,9 +39,6 @@ a, nav li {
   cursor: pointer;  
 }
 
-/* body {
-  font-family: "Open Sans", sans-serif;
-} */
 
 div.navContainer {
   margin: 0;
@@ -103,7 +106,7 @@ body {
 }
 
 .scriptMaster {
-  font-family: 'Hydrant', cursive;
+  font-family: Hydrant;
   letter-spacing: 2px;
   font-size: 44pt;
   color: #3c493f; 

@@ -14,8 +14,8 @@ const Frontpagecard = (props) => {
           <CardTitle>Beginner Lessons</CardTitle>
           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
           <div className="homeCardButton">
-            <Link to='/beginnerlessons' class="btn btn-primary">
-              <img class="cardImage mb-2" src='/assets/images/beginnerBadge.png' />Beginner Lessons
+            <Link to='/beginnerlessons' className="btn btn-primary">
+              <img className="cardImage mb-2" src='/assets/images/beginnerBadge.png' />Beginner Lessons
             </Link>
          </div>    
         </CardBody>
@@ -26,8 +26,8 @@ const Frontpagecard = (props) => {
           <CardTitle>Intermediate Lessons</CardTitle>
           <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
           <div className="homeCardButton">
-            <Link to='/intermediatelessons' class="btn btn-primary">
-              <img class="cardImage mb-2" src='/assets/images/intermediateBadge.png' />Intermediate Lessons
+            <Link to='/intermediatelessons' className="btn btn-primary">
+              <img className="cardImage mb-2" src='/assets/images/intermediateBadge.png' />Intermediate Lessons
             </Link>
          </div>  
         </CardBody>
@@ -38,8 +38,8 @@ const Frontpagecard = (props) => {
           <CardTitle>Advanced Lessons</CardTitle>
           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
                 <div className="homeCardButton">
-                    <Link to='/advancedlessons' class="btn btn-primary">
-                    <img class="cardImage mb-2" src='/assets/images/advancedBadge.png' />Advanced Lessons
+                    <Link to='/advancedlessons' className="btn btn-primary">
+                    <img className="cardImage mb-2" src='/assets/images/advancedBadge.png' />Advanced Lessons
                     </Link>
                 </div>  
         </CardBody>

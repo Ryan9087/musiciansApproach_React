@@ -9,8 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Intermediatelessons from './components/Intermediatelessons';
 import Carouselslider from './components/Carouselslider';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-  Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label, Container, Row, Col } from 'reactstrap';
+import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import Loginmodal from './components/Loginmodal';
 
 
@@ -48,9 +47,9 @@ const Home = () => (
                           <div className="container">
                               <div className="row">
                                   <div className="col">
-                                  <h1 class="display-5 scriptMaster">Musician's Approach</h1>
-            <p class="lead">As a guitarist, your approach is everything!</p>
-            <p class="openingText">Interested in learning to play guitar? If you’re reading this, you’ve already taken the primary step in starting your musical journey. Learning guitar can be intimidating and it’s normal as a beginner to have many questions and concerns, but we’re here to help you get started off on the right foot.</p>
+                                  <h1 className="display-5 scriptMaster">Musician's Approach</h1>
+            <p className="lead">As a guitarist, your approach is everything!</p>
+            <p className="openingText">Interested in learning to play guitar? If you’re reading this, you’ve already taken the primary step in starting your musical journey. Learning guitar can be intimidating and it’s normal as a beginner to have many questions and concerns, but we’re here to help you get started off on the right foot.</p>
                                   </div>
                               </div>
                           </div>

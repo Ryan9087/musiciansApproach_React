@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navigation from '../shared/Navigation';
 import Intermediatelessons from './Intermediatelessons';
 import MusicTheoryLessons from './MusicTheoryLessons';
+import LoginService from '../Services/Login';
 
 class Loginmodal extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class Loginmodal extends Component {
     };
     this.toggleModal = this.toggleModal.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
+    console.log(this.props);
   }
 
   toggleModal() {
@@ -28,11 +30,23 @@ class Loginmodal extends Component {
   }
 
   handleLogin(event) {
-    alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
+    let user = LoginService.login(this.username.value, this.password.value);
+    if (user) {
+      alert(`Username: ${user.username} Password: ${user.password} Remember: ${this.remember.checked}`);
+      console.log(this.props)
+      this.props.loginFunc(user);
+
+    } else {
+      alert('Invalid Credential');
+    }
     this.toggleModal();
     event.preventDefault();
   }
 
+  logIn(username, password) {
+    let user = LoginService.login('Ryan', '1234');
+    console.log(user);
+  }
 
   render() {
     return (
@@ -62,7 +76,7 @@ class Loginmodal extends Component {
                   Remember me
                                 </Label>
               </FormGroup>
-              <Button type="submit" value="submit" color="primary">Login</Button>
+              <Button type="submit" value="submit" color="primary" >Login Form</Button>
             </Form>
           </ModalBody>
         </Modal>
@@ -72,3 +86,4 @@ class Loginmodal extends Component {
 }
 
 export default Loginmodal;
+
